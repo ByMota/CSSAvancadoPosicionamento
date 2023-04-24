@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -22,17 +24,17 @@
     <header class="menu-bg">
       <div class="menu">
         <div class="menu-logo"><a href="#">FlexBlog</a></div>
+        <nav class="menu-nav">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#preco">Preço</a></li>
+            <li><a href="#qualidade">Qualidade</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="sobre">Sobre</a></li>
-          <li><a href="produtos">Produtos</a></li>
-          <li><a href="preco">Preço</a></li>
-          <li><a href="qualidade">Qualidade</a></li>
-        </ul>
-      </nav>
     </header>
-    <h1 class="introducao">Novos valroes e propriedades de CSS</h1>
+    <h1 class="introducao">Novos valores e propriedades de CSS</h1>
     <section class="sobre" id="sobre">
       <div class="sobre-info">
         <h1>Sobre</h1>
@@ -47,8 +49,10 @@
           inegavelmente apropriadas objetivos.
         </p>
       </div>
-      <div class="">
+      <div class="sobre-img">
         <img src="./img/sobre1.jpg" alt="Sobre 1" />
+      </div>
+      <div class="sobre-img">
         <img src="./img/sobre2.jpg" alt="Sobre 2" />
       </div>
     </section>
@@ -153,16 +157,18 @@
         </p>
       </div>
     </section>
-    <section class="newletter">
+    <section class="newsletter">
       <div class="newsletter-info">
         <h1>Newsletter</h1>
         <p>assine e fique por dentro das novidades</p>
       </div>
-      <form action="">
+      <form class="newsletter-form" action="">
         <input type="text" placeholder="Seu e-mail" />
         <button type="submit">Assinar</button>
       </form>
     </section>
-    <footer><p>FlexBlog © Todos os direitos reservados.</p></footer>
+    <footer class="footer">
+      <p>FlexBlog © Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
